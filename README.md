@@ -14,7 +14,7 @@
     ``` https://github.com/appoena/datadogpoweruser ```
 
 
-### Comando usado dentro da pasta/projeto desejado. neste exemplo estou usando o ```/apm/dotnet```:
+### Comando usado dentro da pasta/projeto desejado.  Neste exemplo estou usando o ```/apm/dotnet```:
   1. Instalação do minikube no mac: ( caso já tenha instalado, pode ser ignorado )
     ``` brew install minikube ```
   2. Ininciando o minikube:
@@ -40,7 +40,7 @@
 
 # Demais comandos úteis
 
-## Instalação do Docker no Minikube no mac (certifique de ter o docker já instalado)
+### Instalação do Docker no Minikube no mac (certifique de ter o docker já instalado)
   ``` brew install minikube ``` 
 
   Inicie o Minikube usando Docker como driver:
@@ -70,13 +70,13 @@
  ``` minikube addons enable metrics-server ``` 
 
 # Para implantar uma aplicação de exemplo:
-# Criar um deployment
+### Criar um deployment
  ``` kubectl create deployment hello-minikube --image=kicbase/echo-server:1.0 ``` 
 
-# Expor o serviço
+### Expor o serviço
  ``` kubectl expose deployment hello-minikube --type=NodePort --port=8080 ``` 
 
-# Obter a URL do serviço
+### Obter a URL do serviço
  ``` minikube service hello-minikube --url ``` 
 
 
